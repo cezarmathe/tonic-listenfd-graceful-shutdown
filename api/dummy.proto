@@ -1,0 +1,13 @@
+// dummy protobuf service
+
+syntax = "proto3";
+
+package dummy;
+
+message DummyRequest {}
+
+message DummyResponse {}
+
+service Dummy {
+    rpc Dummy (DummyRequest) returns (DummyResponse) {}
+}
